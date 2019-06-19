@@ -11,9 +11,9 @@ class BlogRoll extends React.Component {
       <div>
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column" key={post.id}>
+            <div className="column" key={post.id}>
               <article
-                className={`blog-list-item tile is-child box notification`}
+                className={`blog-list-item box`}
               >
                 <header>
                   <p className="post-meta">
