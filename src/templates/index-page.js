@@ -9,18 +9,18 @@ export const IndexPageTemplate = ({
   title,
   description,
 }) => (
-  <div>
-    <section className="section section--gradient">
-      <div className="container">
-        <BlogRoll />
-        <div className="column is-12 has-text-centered">
-          <Link className="btn" to="/blog">
-            Read more
-          </Link>
-        </div>
+  <section className="section section--gradient">
+    <div className="container">
+      <h1 class="title">{title}</h1>
+      <p class="subtitle">{description}</p>
+      <BlogRoll />
+      <div className="column is-12 has-text-centered">
+        <Link className="btn" to="/blog">
+          Read more
+        </Link>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 )
 
 IndexPageTemplate.propTypes = {
